@@ -1,16 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turma da Mônica</title>
+<meta charset="UTF-8">
+<title>Turma da Mônica</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background-image:url("https://i.pinimg.com/736x/33/81/34/338134555e03b1cb049e89cbbb62aa85.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+/* TITULO */
+
+h1{
+    text-align:center;
+    margin-top:40px;
+    color:white;
+    font-size:42px;
+    text-shadow:2px 2px 6px rgba(0,0,0,0.6);
+}
+
+/* CARD PRINCIPAL */
+
+.card{
+    width:600px;
+    margin:60px auto;
+    border-radius:15px;
+    background:rgba(255,255,255,0.80);
+    backdrop-filter:blur(6px);
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    text-align:center;
+}
+
+/* IMAGEM */
+
+.card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* TEXTO */
+
+.card p{
+    margin-top:15px;
+    font-size:16px;
+    line-height:1.5;
+}
+
+/* BOTAO */
+
+.botao{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.botao a{
+    background:white;
+    padding:12px 20px;
+    border-radius:8px;
+    font-weight:bold;
+    text-decoration:none;
+    color:black;
+}
+
+.botao a:hover{
+    background:#eeeeee;
+}
+
+</style>
 </head>
+
 <body>
+
 <h1>Turma da Mônica</h1>
 
-<p>Essa página mostra informações sobre a Turma da Mônica.</p>
+<div class="card">
 
-<a href="/desenhos">Voltar</a>
+<img src="https://ofuxico.com.br/wp-content/uploads/2022/09/turma-da-monica-espanada-desenho.jpg.webp">
+
+<p>
+A <strong>Turma da Mônica</strong> é uma das histórias em quadrinhos mais
+famosas do Brasil, criada por <strong>Mauricio de Sousa</strong>.
+As histórias acompanham as aventuras de Mônica, Cebolinha,
+Cascão e Magali no bairro do Limoeiro.
+</p>
+
+<p>
+Cada personagem tem uma personalidade marcante: Mônica é forte
+e decidida, Cebolinha vive criando planos infalíveis,
+Cascão foge da água e Magali ama comer.
+Juntos eles vivem histórias divertidas que marcaram
+gerações de leitores e espectadores brasileiros.
+</p>
+
+</div>
+
+<div class="botao">
+<a href="/desenhos">Voltar para Desenhos</a>
+</div>
 
 </body>
+
 </html>

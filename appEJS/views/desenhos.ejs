@@ -1,135 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desenhos animados</title>
+<meta charset="UTF-8">
+<title>Desenhos Brasileiros</title>
 
-	<style>
+<style>
 
-		body{
-			font-family: Arial, sans-serif;
-			background: linear-gradient(to right, #00c3ff, #6a00ff);
-			text-align: center;
-			margin: 0;
-			padding: 0;
-			color: white;
-		}
+/* FUNDO */
 
-		h1{
-			margin-top: 30px;
-			font-size: 40px;
-		}
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    padding:0;
+    background-image:url("https://i.pinimg.com/736x/33/81/34/338134555e03b1cb049e89cbbb62aa85.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
 
-		.container{
-			display: flex;
-			justify-content: center;
-			flex-wrap: wrap;
-			gap: 30px;
-			margin-top: 40px;
-		}
+/* TITULO */
 
-		.card{
-			background-color: rgba(255,255,255,0.15);
-			width: 220px;
-			border-radius: 15px;
-			padding: 15px;
-			transition: transform 0.3s;
-		}
+h1{
+    text-align:center;
+    margin-top:40px;
+    color:white;
+    font-size:42px;
+    text-shadow:2px 2px 6px rgba(0,0,0,0.6);
+}
 
-		.card:hover{
-			transform: scale(1.05);
-		}
+/* CONTAINER */
 
-		.card img{
-			width: 100%;
-			border-radius: 10px;
-		}
+.container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:40px;
+    margin-top:60px;
+}
 
-		.card h2{
-			margin-top: 10px;
-		}
+/* CARD */
 
-		.card p{
-			font-size: 14px;
-			line-height: 1.4;
-		}
+.card{
+    width:260px;
+    border-radius:15px;
+    overflow:hidden;
+    background:rgba(255,255,255,0.75);
+    backdrop-filter:blur(6px);
+    padding:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+    transition:transform 0.25s;
+    min-height:360px;
+}
 
-		.botao{
-			margin-top: 40px;
-		}
+.card:hover{
+    transform:scale(1.05);
+}
 
-		a{
-			text-decoration: none;
-			background-color: white;
-			color: #6a00ff;
-			padding: 10px 20px;
-			border-radius: 8px;
-			font-weight: bold;
-		}
+/* IMAGEM */
 
-		a:hover{
-			background-color: #ddd;
-		}
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+}
 
-	</style>
+/* TEXTO */
+
+.card h2{
+    margin-top:10px;
+}
+
+.card p{
+    font-size:14px;
+}
+
+/* LINK */
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* BOTAO */
+
+.botao{
+    text-align:center;
+    margin-top:60px;
+    margin-bottom:60px;
+}
+
+.botao a{
+    background:white;
+    padding:12px 20px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+</style>
 </head>
 
 <body>
 
-	<h1>✨ Desenhos Clássicos Brasileiros ✨</h1>
+<h1>Desenhos Brasileiros</h1>
 
-	<div class="container">
+<div class="container">
 
-		<a href="/desenhos/turma-da-monica">
+<a href="/desenhos/turmaMonica">
+<div class="card">
 
-            <div class="card">
+<img src="https://knartes.cdn.magazord.com.br/img/2022/12/produto/713/rtdm1.png?ims=600x600">
 
-                <img src="imagem">
+<h2>Turma da Mônica</h2>
 
-                <h2>Turma da Mônica</h2>
+<p>
+A Turma da Mônica mostra as aventuras de Mônica,
+Cebolinha, Cascão e Magali no bairro do Limoeiro.
+</p>
 
-                <p>
-                    A Turma da Mônica mostra as aventuras de Mônica, Cebolinha,
-				Cascão e Magali no bairro do Limoeiro. Criada por Mauricio de
-				Sousa, é uma das histórias em quadrinhos e animações mais
-				famosas do Brasil.
-                </p>
+</div>
+</a>
 
-            </div>
 
-        </a>
-        
-		<div class="card">
-			<img src="https://upload.wikimedia.org/wikipedia/pt/5/5a/Sitio_do_Picapau_Amarelo.jpg">
+<div class="card">
 
-			<h2>Sítio do Picapau Amarelo</h2>
+<img src="https://files.zinecultural.com/Repositorio/Upload/S3/mlib-uploads/full/clipboard02-60773a5da9b30.webp">
 
-			<p>
-				Baseado na obra de Monteiro Lobato, o Sítio do Picapau Amarelo
-				acompanha as aventuras de Narizinho, Pedrinho, Emília e
-				Visconde de Sabugosa em um lugar mágico cheio de fantasia
-				e personagens inesquecíveis.
-			</p>
-		</div>
+<h2>Sítio do Picapau Amarelo</h2>
 
-		<div class="card">
-			<img src="https://upload.wikimedia.org/wikipedia/pt/1/19/Castelo_Ra_Tim_Bum_logo.png">
+<p>
+Um universo mágico criado por Monteiro Lobato
+com personagens como Emília, Narizinho e Pedrinho.
+</p>
 
-			<h2>Castelo Rá-Tim-Bum</h2>
+</div>
 
-			<p>
-				O Castelo Rá-Tim-Bum é um programa infantil educativo
-				brasileiro que se passa em um castelo mágico onde vive
-				Nino, um menino feiticeiro que aprende e ensina várias
-				coisas junto com seus amigos.
-			</p>
-		</div>
 
-	</div>
+<div class="card">
 
-	<div class="botao">
-		<a href="/">Voltar para a página inicial</a>
-	</div>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTETeC7eti9w2w7lsk2V7iuuEiV7hqEOgXv5w&s">
+
+<h2>Castelo Rá-Tim-Bum</h2>
+
+<p>
+Um clássico programa infantil brasileiro cheio
+de magia, aprendizado e personagens inesquecíveis.
+</p>
+
+</div>
+
+</div>
+
+<div class="botao">
+<a href="/">Voltar</a>
+</div>
+
 </body>
+
 </html>

@@ -3,59 +3,88 @@ html(lang="pt-br")
 
 	head
 		meta(charset="UTF-8")
-		title Pedrinho - Sítio do Picapau Amarelo
+		title Pedrinho
 
 		style.
 			body{
 				font-family: Arial, sans-serif;
-				background: linear-gradient(to right, #00c3ff, #6a00ff);
-				text-align: center;
-				margin: 0;
-				padding: 0;
-				color: white;
+				margin:0;
+				padding:0;
+				background-image:url("https://i.pinimg.com/736x/33/81/34/338134555e03b1cb049e89cbbb62aa85.jpg");
+				background-size:cover;
+				background-position:center;
+				background-attachment:fixed;
 			}
 
-			.container{
-				margin-top: 60px;
+			h1{
+				text-align:center;
+				margin-top:40px;
+				color:white;
+				font-size:42px;
+				text-shadow:2px 2px 6px rgba(0,0,0,0.6);
 			}
 
-			img{
-				width: 250px;
-				border-radius: 12px;
-				margin-top: 20px;
+			.card{
+				width:600px;
+				margin:60px auto;
+				border-radius:15px;
+				background:rgba(255,255,255,0.80);
+				backdrop-filter:blur(6px);
+				padding:25px;
+				box-shadow:0 10px 25px rgba(0,0,0,0.3);
+				text-align:center;
 			}
 
-			p{
-				width: 60%;
-				margin: 20px auto;
-				font-size: 18px;
-				line-height: 1.5;
+			.card img{
+				width:100%;
+				height:280px;
+				object-fit:cover;
+				border-radius:10px;
 			}
 
-			a{
-				text-decoration: none;
-				background-color: white;
-				color: #6a00ff;
-				padding: 10px 20px;
-				border-radius: 8px;
-				font-weight: bold;
+			.card p{
+				margin-top:15px;
+				font-size:16px;
+				line-height:1.5;
+			}
+
+			.botao{
+				text-align:center;
+				margin-bottom:60px;
+			}
+
+			.botao a{
+				background:white;
+				padding:12px 20px;
+				border-radius:8px;
+				font-weight:bold;
+				text-decoration:none;
+				color:black;
 			}
 
 	body
 
-		.container
+		h1 Pedrinho
 
-			h1 Pedrinho
+		.card
 
-			img(src="https://upload.wikimedia.org/wikipedia/pt/7/7f/Pedrinho_Sitio.png")
+			img(src="https://upload.wikimedia.org/wikipedia/pt/thumb/a/ae/Pedrinho_2001.jpg/250px-Pedrinho_2001.jpg")
 
 			p
 				| Pedrinho é um dos personagens principais do
-				| Sítio do Picapau Amarelo, obra criada por
-				| Monteiro Lobato. Ele é um menino muito
-				| aventureiro e curioso que adora explorar
-				| o sítio e viver histórias mágicas ao lado
-				| de Narizinho, Emília e Visconde de Sabugosa.
+				| Sítio do Picapau Amarelo, criado por
+				| Monteiro Lobato.
 
-			br
-			a(href="/meninos") Voltar para página de meninos
+			p
+				| Ele é um menino curioso, corajoso e muito
+				| aventureiro, que sempre visita o sítio de
+				| Dona Benta para passar férias.
+
+			p
+				| No sítio, Pedrinho vive aventuras incríveis
+				| ao lado de Narizinho, Emília, Visconde de
+				| Sabugosa e muitos outros personagens
+				| fantásticos.
+
+		.botao
+			a(href="/meninos") Voltar
