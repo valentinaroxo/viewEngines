@@ -1,0 +1,89 @@
+doctype html
+html(lang="pt-br")
+
+	head
+		meta(charset="UTF-8")
+		title Personagens Meninos
+
+		style.
+			body{
+				font-family: Arial, sans-serif;
+				background: linear-gradient(to right, #00c3ff, #6a00ff);
+				text-align: center;
+				margin: 0;
+				padding: 0;
+				color: white;
+			}
+
+			h1{
+				margin-top: 30px;
+				font-size: 40px;
+			}
+
+			.container{
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				gap: 30px;
+				margin-top: 40px;
+			}
+
+			.card{
+				background-color: rgba(255,255,255,0.15);
+				width: 220px;
+				border-radius: 15px;
+				padding: 15px;
+				transition: transform 0.3s;
+			}
+
+			.card:hover{
+				transform: scale(1.05);
+			}
+
+			.card img{
+				width: 100%;
+				border-radius: 10px;
+			}
+
+			.card p{
+				font-size: 14px;
+			}
+
+			a{
+				text-decoration: none;
+				color: inherit;
+			}
+
+	body
+
+		h1 Personagens Meninos 
+
+		.container
+
+			a(href="/meninos/pedrinho")
+				.card
+					img(src="https://upload.wikimedia.org/wikipedia/pt/7/7f/Pedrinho_Sitio.png")
+					h2 Pedrinho
+					p
+						| Pedrinho é um menino aventureiro que visita o
+						| Sítio do Picapau Amarelo e vive muitas histórias
+						| mágicas com Narizinho, Emília e o Visconde.
+
+			.card
+				img(src="https://upload.wikimedia.org/wikipedia/pt/4/45/Cebolinha.png")
+				h2 Cebolinha
+				p
+					| Cebolinha é um dos amigos da Turma da Mônica.
+					| Ele é famoso por trocar a letra R pela L
+					| e por seus planos para derrotar a Mônica.
+
+			.card
+				img(src="https://upload.wikimedia.org/wikipedia/pt/0/0e/Nino_castelo.png")
+				h2 Nino
+				p
+					| Nino é um menino feiticeiro que vive
+					| em um castelo mágico no programa
+					| Castelo Rá-Tim-Bum.
+
+		br
+		a(href="/") Voltar para a página inicial

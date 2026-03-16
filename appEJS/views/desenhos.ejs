@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenhos animados</title>
+
+	<style>
+
+		body{
+			font-family: Arial, sans-serif;
+			background: linear-gradient(to right, #00c3ff, #6a00ff);
+			text-align: center;
+			margin: 0;
+			padding: 0;
+			color: white;
+		}
+
+		h1{
+			margin-top: 30px;
+			font-size: 40px;
+		}
+
+		.container{
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 30px;
+			margin-top: 40px;
+		}
+
+		.card{
+			background-color: rgba(255,255,255,0.15);
+			width: 220px;
+			border-radius: 15px;
+			padding: 15px;
+			transition: transform 0.3s;
+		}
+
+		.card:hover{
+			transform: scale(1.05);
+		}
+
+		.card img{
+			width: 100%;
+			border-radius: 10px;
+		}
+
+		.card h2{
+			margin-top: 10px;
+		}
+
+		.card p{
+			font-size: 14px;
+			line-height: 1.4;
+		}
+
+		.botao{
+			margin-top: 40px;
+		}
+
+		a{
+			text-decoration: none;
+			background-color: white;
+			color: #6a00ff;
+			padding: 10px 20px;
+			border-radius: 8px;
+			font-weight: bold;
+		}
+
+		a:hover{
+			background-color: #ddd;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<h1>✨ Desenhos Clássicos Brasileiros ✨</h1>
+
+	<div class="container">
+
+		<a href="/desenhos/turma-da-monica">
+
+            <div class="card">
+
+                <img src="imagem">
+
+                <h2>Turma da Mônica</h2>
+
+                <p>
+                    A Turma da Mônica mostra as aventuras de Mônica, Cebolinha,
+				Cascão e Magali no bairro do Limoeiro. Criada por Mauricio de
+				Sousa, é uma das histórias em quadrinhos e animações mais
+				famosas do Brasil.
+                </p>
+
+            </div>
+
+        </a>
+        
+		<div class="card">
+			<img src="https://upload.wikimedia.org/wikipedia/pt/5/5a/Sitio_do_Picapau_Amarelo.jpg">
+
+			<h2>Sítio do Picapau Amarelo</h2>
+
+			<p>
+				Baseado na obra de Monteiro Lobato, o Sítio do Picapau Amarelo
+				acompanha as aventuras de Narizinho, Pedrinho, Emília e
+				Visconde de Sabugosa em um lugar mágico cheio de fantasia
+				e personagens inesquecíveis.
+			</p>
+		</div>
+
+		<div class="card">
+			<img src="https://upload.wikimedia.org/wikipedia/pt/1/19/Castelo_Ra_Tim_Bum_logo.png">
+
+			<h2>Castelo Rá-Tim-Bum</h2>
+
+			<p>
+				O Castelo Rá-Tim-Bum é um programa infantil educativo
+				brasileiro que se passa em um castelo mágico onde vive
+				Nino, um menino feiticeiro que aprende e ensina várias
+				coisas junto com seus amigos.
+			</p>
+		</div>
+
+	</div>
+
+	<div class="botao">
+		<a href="/">Voltar para a página inicial</a>
+	</div>
+</body>
+</html>
