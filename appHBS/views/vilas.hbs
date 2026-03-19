@@ -1,105 +1,14 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<title>Página das Vilãs</title>
+<h1>Vilãs Disney</h1>
 
-<style>
-
-body{
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #1a001f, #3a003f);
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    color: white;
-}
-
-h1{
-    margin-top: 30px;
-    color: #ff4da6;
-}
-h2{
-    font-family: sans-serif;
-    color: #ff80bf;
-    margin-bottom: 40px;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin: 40px;
-}
-
-.card{
-    background-color: #2a002f;
-    border-radius: 15px;
-    width: 200px;
-    padding: 15px;
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.6);
-    transition: transform 0.3s;
-}
-
-.card:hover{
-    transform: scale(1.05);
-}
-
-.card img{
-    width: 100%;
-    height: 250px; 
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.nome{
-    font-size: 20px;
-    color: #ff80bf;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.descricao{
-    font-size: 14px;
-    color: #ddd;
-}
-
-</style>
-</head>
-
-<body>
-
-<h1> Mundo das Vilãs </h1>
-<h2>"com terror, vava!"</h2>
-
-<div class="container">
-
-<div class="card">
-<img src="https://i.pinimg.com/originals/a5/9f/0e/a59f0ed99314e092ac847ed0cb3b23b2.jpg">
-<div class="nome">Malévola</div>
-<div class="descricao">Uma poderosa fada sombria conhecida por lançar a maldição da Bela Adormecida.</div>
-</div>
-
-<div class="card">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz4j1Iz7uAORh-nWKNjisRXby1vaShFSV1MQ&s">
-<div class="nome">Úrsula</div>
-<div class="descricao">A bruxa do mar que manipula os outros para conseguir poder.</div>
-</div>
-
-<div class="card">
-<img src="https://www.humpalumpa.com.br/fotos/personagens/12personagem_31072019-141822.jpg">
-<div class="nome">Rainha Má</div>
-<div class="descricao">Obcecada por ser a mais bela do reino, ela tenta destruir Branca de Neve.</div>
-</div>
-
-<div class="card">
-<img src="https://miscelana.com/wp-content/uploads/2021/02/c97c4590-72f2-4ffe-85a4-66268c0bb59d.jpg?w=640">
-<div class="nome">Cruella</div>
-<div class="descricao">Excêntrica e cruel, famosa por seu amor por casacos de pele.</div>
-</div>
-
-</div>
-
-</body>
-</html>
+{{#if preferencia.length}}
+  <ul>
+    {{#each preferencia}}
+      <li>
+        <strong>{{this.nome}}</strong>
+        <span> - {{this.filme}}</span>
+      </li>
+    {{/each}}
+  </ul>
+{{else}}
+  <p>Nenhuma vilã encontrada.</p>
+{{/if}}

@@ -1,102 +1,14 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<title>Página das Princesas</title>
+<h1>Princesas Disney</h1>
 
-<style>
-    body{
-        font-family: Arial, sans-serif;
-        background: linear-gradient(to right, #ffd6ec, #ffe9f6);
-        text-align: center;
-        margin: 0;
-        padding: 0;
-    }
-
-    h1{
-        color: #c2185b;
-        margin-top: 30px;
-    }
-    h2{
-        font-family: sans-serif;
-        color: #a71a52;
-    }
-
-    .container{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 20px;
-        margin: 40px;
-    }
-
-    .card{
-        background-color: white;
-        border-radius: 15px;
-        width: 200px;
-        padding: 15px;
-        box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
-        transition: transform 0.3s;
-    }
-
-    .card:hover{
-        transform: scale(1.05);
-    }
-
-    .card img{
-    width: 100%;
-    height: 250px; 
-    object-fit: cover;
-    border-radius: 10px;
-    }
-
-    .nome{
-        font-size: 20px;
-        color: #d81b60;
-        margin-top: 10px;
-        font-weight: bold;
-    }
-
-    .descricao{
-        font-size: 14px;
-        color: #555;
-    }
-</style>
-
-</head>
-
-<body>
-
-<h1> Mundo das Princesas </h1>
-<h2>"com amor, vava!"</h2>
-
-<div class="container">
-
-    <div class="card">
-        <img src="https://i.pinimg.com/474x/b7/e9/e5/b7e9e5c095afa51603ac23fe2f83690d.jpg">
-        <div class="nome">Ariel</div>
-        <div class="descricao">A princesa sereia curiosa que sonha em conhecer o mundo humano.</div>
-    </div>
-
-    <div class="card">
-        <img src="https://disneyplusbrasil.com.br/wp-content/uploads/2025/03/Cinderela.jpg">
-        <div class="nome">Cinderela</div>
-        <div class="descricao">Uma jovem gentil que acredita que os sonhos podem se tornar realidade.</div>
-    </div>
-
-    <div class="card">
-        <img src="https://rihappy.vtexassets.com/arquivos/ids/1390556/Quebra-Cabeca---60-Pecas---Disney---Princesa---Bela---Toyster-1.jpg?v=637570353074470000">
-        <div class="nome">Bela</div>
-        <div class="descricao">Ama livros e vê a beleza além das aparências.</div>
-    </div>
-
-    <div class="card">
-        <img src="https://pbs.twimg.com/media/EoEnXaDXIAA3OfF.jpg">
-        <div class="nome">Rapunzel</div>
-        <div class="descricao">Uma princesa aventureira com cabelos mágicos.</div>
-    </div>
-
-</div>
-
-</body>
-</html>
+<% if (preferencia && preferencia.length > 0) { %>
+  <ul>
+    <% preferencia.forEach(function(item) { %>
+      <li>
+        <strong><%= item.nome %></strong>
+        <span> - <%= item.filme %></span>
+      </li>
+    <% }); %>
+  </ul>
+<% } else { %>
+  <p>Nenhuma princesa encontrada.</p>
+<% } %>
